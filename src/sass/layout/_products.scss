@@ -1,0 +1,132 @@
+.container--products {
+  text-align: center;
+}
+
+.products__label {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  font-family: 'Titan One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.16;
+
+  text-transform: uppercase;
+
+  color: var(--second-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+}
+
+.products__title {
+  margin-bottom: 144px;
+
+  font-family: 'Titan One', cursive;
+  font-size: 34px;
+  line-height: 1.14;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 150px;
+
+    font-size: 48px;
+    line-height: 1.14;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 259px;
+
+    font-size: 66px;
+    line-height: 1.14;
+  }
+}
+
+.products__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    margin-top: -24px;
+    margin-left: -24px;
+  }
+}
+
+.products__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    margin-left: 20px;
+    flex-basis: calc(100% - 3 * 20px);
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 24px;
+    margin-left: 24px;
+    flex-basis: calc(100% - 3 * 24px);
+  }
+}
+
+.products__item {
+  position: relative;
+  &:nth-child(1) .products__item-container {
+    background: #ffb8ca;
+  }
+  &:nth-child(2) .products__item-container {
+    background: #f0d1a5;
+  }
+  &:nth-child(3) .products__item-container {
+    background: #c2e297;
+  }
+}
+
+.products__item-container {
+  border-radius: 24px;
+  padding: 163px 44px 50px 44px;
+}
+
+.products__item-title {
+  font-family: 'Titan One', cursive;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--primary-color);
+}
+
+.products__title::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 249px;
+  height: 252px;
+  background-image: url();
+}
+
+.products__item-text {
+  margin-bottom: 60px;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+
+  color: var(--primary-color);
+}
