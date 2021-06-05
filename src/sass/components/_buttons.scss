@@ -22,6 +22,8 @@
 
   fill: var(--accent-color);
   background-color: var(--primary-color);
+
+  cursor: pointer;
 }
 
 .button-hero-arrow {
@@ -32,25 +34,20 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
-  fill: var(--accent-color);
-  background-color: var(--primary-color);
+  // тут будет фоновое изображение background-image: ;
 
   @media screen and (max-width: 767px) {
     display: none;
   }
-
-  @media screen and (min-width: 1280px) {
-    width: 26px;
-    height: 26px;
-  }
 }
 
 .button-header {
+  @extend %button;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  text-align: center;
 
   width: 159px;
   height: 44px;
@@ -66,13 +63,11 @@
 }
 
 .button-products {
+  @extend %button;
   color: var(--primary-color);
   background-color: var(--accent-color);
   font-size: 8px;
   line-height: 1.25;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 
   width: 63px;
   height: 24px;
@@ -91,9 +86,8 @@
 }
 
 .button-how {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  @extend %button;
+
   font-size: 8px;
   line-height: 1.25;
 
@@ -117,10 +111,11 @@
 }
 
 .button-advantages {
+  @extend %button;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  text-align: center;
 
   width: 176px;
   height: 44px;
@@ -137,10 +132,11 @@
 }
 
 .button-contacts-main {
+  @extend %button;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  text-align: center;
 
   width: 161px;
   height: 44px;
@@ -167,10 +163,11 @@
 }
 
 .button-contacts-second {
+  @extend %button;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  text-align: center;
 
   width: 161px;
   height: 44px;
