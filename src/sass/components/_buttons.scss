@@ -1,0 +1,197 @@
+.products {
+  background-color: #c4c4c4;
+}
+
+.button {
+  border-color: transparent;
+  border-radius: 20px;
+}
+
+.button__pointer {
+  margin-left: 12px;
+}
+
+.button-arrow {
+  border-radius: 50%;
+  border-color: transparent;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  fill: var(--accent-color);
+  background-color: var(--primary-color);
+}
+
+.button-hero-arrow {
+  border-radius: 50%;
+  border-color: transparent;
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  fill: var(--accent-color);
+  background-color: var(--primary-color);
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.button-header {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+
+  width: 159px;
+  height: 44px;
+
+  color: var(--accent-color);
+  background-color: var(--primary-color);
+  stroke: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
+.button-products {
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+  font-size: 8px;
+  line-height: 1.25;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 63px;
+  height: 24px;
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.28;
+    width: 104px;
+    height: 40px;
+  }
+}
+
+.button-how {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  line-height: 1.25;
+
+  width: 83px;
+  height: 24px;
+
+  color: var(--accent-color);
+  background-color: var(--primary-color);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.28;
+    width: 138px;
+    height: 40px;
+  }
+}
+
+.button-advantages {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+
+  width: 176px;
+  height: 44px;
+
+  color: var(--accent-color);
+  background-color: var(--primary-color);
+
+  stroke: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
+.button-contacts-main {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+
+  width: 161px;
+  height: 44px;
+
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+
+  stroke: var(--primary-color);
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 191px;
+    height: 44px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 198px;
+    height: 44px;
+  }
+}
+
+.button-contacts-second {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+
+  width: 161px;
+  height: 44px;
+
+  color: var(--accent-color);
+  background-color: var(--primary-color);
+
+  stroke: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 174px;
+    height: 44px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 180px;
+    height: 44px;
+  }
+}
