@@ -1,0 +1,32 @@
+.advantages {
+  padding-bottom: 97px;
+
+  background-color: var(--primary-bg);
+}
+
+.advantages__label {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+
+  // &::before {
+  //   content: '.';
+  //   width: 33px;
+  //   height: 50px;
+  //   background-image: url(./images/icons/png/advantages_1.png);
+  // }
+}
+
+.advantages__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.67;
+}
