@@ -54,3 +54,8 @@ body {
     padding-right: 115px;
   }
 }
+*,
+*::before,
+*::after {
+  outline: 1px solid tomato;
+}
