@@ -1,20 +1,26 @@
 <!-- Шапка -->
-<header class="hero-header">
-  <div class="container">
+<header class="header">
+  <div class="header__container">
     <a class="logo header__logo" href="./index.html"
       ><img src="./images/icons/svg/logo.svg" alt="Лого Мороженое"
     /></a>
 
-    <nav class="header__nav">
-      <ul class="header__list">
-        <li class="item"><a class="link" href="">Home</a></li>
-        <li class="item"><a class="link" href="">About us</a></li>
-        <li class="item"><a class="link" href="">How it’s made?</a></li>
-        <li class="item"><a class="link" href="">Our products</a></li>
-        <li class="item"><a class="link" href="">Contact</a></li>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link current" href="">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="">About us</a></li>
+        <li class="nav__item"><a class="nav__link" href="">How it’s made?</a></li>
+        <li class="nav__item"><a class="nav__link" href="">Our products</a></li>
+        <li class="nav__item"><a class="nav__link" href="">Contact</a></li>
       </ul>
-      <a href="">Buy now</a>
     </nav>
+
+    <button type="button" class="button-header">
+      <span>Buy now</span>
+      <svg height="8" width="10" class="button__pointer">
+        <use href="./images/icons/svg/sprite.svg#icon-arrow"></use>
+      </svg>
+    </button>
   </div>
 
   <!-- <button class="mobile-menu__btn" data-menu-button>

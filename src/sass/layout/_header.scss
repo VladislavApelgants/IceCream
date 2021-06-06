@@ -1,8 +1,14 @@
-.hero-header .container {
+.header__container {
   display: flex;
   align-items: center;
-  background-color: blue;
-  // justify-content: flex-start;
+  background-color: var(--second-bg);
+  justify-content: space-between;
+
+  media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    // padding: 0 15px;
+    // margin: 0 auto;
+  }
 }
 
 .container {
@@ -11,12 +17,38 @@
   padding-right: 15px;
 }
 
-.header__nav {
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
   display: flex;
 }
 
-.header__list {
-  display: flex;
+.nav__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.nav__link {
+  display: block;
+  padding-top: 50px;
+
+  color: inherit;
+  text-decoration: none;
+
+  position: relative;
+  transition: color var(--animation);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31px;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+.nav__link.current {
+  color: var(--accent-color);
 }
 
 // .header {
