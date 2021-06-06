@@ -1,6 +1,6 @@
 <!-- Шапка -->
 <header class="header">
-  <div class="header__container">
+  <div class="header__panel">
     <a class="logo header__logo" href="./index.html"
       ><img src="./images/icons/svg/logo.svg" alt="Лого Мороженое"
     /></a>
@@ -21,15 +21,43 @@
         <use href="./images/icons/svg/sprite.svg#icon-arrow"></use>
       </svg>
     </button>
+
+    <button class="mobile-menu__btn" data-menu-button>
+      <svg class="menu-btn__icon" width="20" height="12">
+        <use class="menu-btn__close" href="./images/icons/svg/sprite.svg#icon-close"></use>
+
+        <use class="menu-btn__icon-menu" href="./images/icons/svg/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
   </div>
 
-  <!-- <button class="mobile-menu__btn" data-menu-button>
-    <svg class="menu-btn__icon" width="40" height="40">
-      <use class="menu-btn__close" href="./images/icons.svg/sprite.svg#close"></use>
+  <div class="mobile-menu" data-menu>
+    <button type="button" class="button-header">
+      <span>Buy now</span>
+      <svg height="8" width="10" class="button__pointer">
+        <use href="./images/icons/svg/sprite.svg#icon-arrow"></use>
+      </svg>
+    </button>
 
-      <use class="menu-btn__icon-menu" href="./images/icons.svg/sprite.svg#icon-menu"></use>
-    </svg>
-  </button> -->
+    <ul class="mobile-menu__list">
+      <li class="item mobile-menu__item">
+        <a href="./hero" class="link mobile-menu__link mobile-menu__link--accent">Home</a>
+      </li>
+      <li class="item mobile-menu__item">
+        <a href="./products.html.html" class="link mobile-menu__link">About us</a>
+      </li>
+      <li class="item mobile-menu__item mobile-menu__item">
+        <a href="./about.html" class="link mobile-menu__link">How it’s made?</a>
+      </li>
+      <li class="item mobile-menu__item">
+        <a href="./contacts.html" class="link mobile-menu__link">Our products</a>
+      </li>
+      <li class="item mobile-menu__item">
+        <a href="./contacts.html" class="link mobile-menu__link">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <script src="./js/modal.js"></script>
 </header>
 
 <!-- <section class="hero">
