@@ -1,42 +1,4 @@
-.gallery {
-}
-
 .gallery__container {
   padding: 0;
-  background-image: url(../images/gallery/home-pic5_mobile.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: calc(100vw / 2.93);
-
-  @media screen and (min-width: 479px) {
-    height: 164px;
-    background-image: url(../images/gallery/home-pic5_tablet.jpg);
-  }
-
-  @media screen and (min-width: 768px) {
-    height: 264px;
-    background-image: url(../images/gallery/home-pic5_tablet.jpg);
-  }
-
-  @media screen and (min-width: 1280px) {
-    background-image: url(../images/gallery/home-pic5_desktop.jpg);
-    height: 430px;
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    @media screen and (max-width: 767px) {
-      background-image: url(../images/gallery/home-pic5@2x_mobile.jpg);
-    }
-
-    @media screen and (min-width: 768px) {
-      background-image: url(../images/gallery/home-pic5@2x_tablet.jpg);
-    }
-
-    @media screen and (min-width: 1280px) {
-      background-image: url(../images/gallery/home-pic5@2x_desktop.jpg);
-    }
-  }
+  background-image: linear-gradient(to top, var(--primary-color) 60%, var(--primary-bg) 60%);
 }
