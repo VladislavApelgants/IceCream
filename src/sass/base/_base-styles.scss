@@ -44,8 +44,8 @@ body {
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -54,8 +54,39 @@ body {
     padding-right: 115px;
   }
 }
-*,
-*::before,
-*::after {
-  outline: 1px solid tomato;
+
+.hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.label {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  font-family: 'Titan One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.16;
+
+  text-transform: uppercase;
+
+  color: var(--second-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+}
+
+.products {
+  @extend %section-padding;
 }
