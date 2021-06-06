@@ -1,10 +1,16 @@
 .header__container {
-  display: flex;
-  align-items: center;
   background-color: var(--second-bg);
-  justify-content: space-between;
+  justify-content: left;
+
+  @media screen and (min-width: 768px) and (min-width: 1199.98px) {
+    display: flex;
+    justify-content: space-between;
+  }
 
   media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     max-width: 1200px;
     // padding: 0 15px;
     // margin: 0 auto;
@@ -18,8 +24,12 @@
 }
 
 .nav {
-  display: flex;
-  align-items: center;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    display: flex;
+  }
 }
 
 .nav__list {
