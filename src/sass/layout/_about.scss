@@ -16,7 +16,6 @@
       (min-resolution: 2dppx) {
       & {
         background-image: url(../images/about/milk@2x_mobile.png);
-        // background-size: contain;
       }
     }
   }
@@ -44,17 +43,9 @@
 
 .about__label {
   display: block;
-  margin-bottom: 15px;
 
-  font-family: Titan One;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
   text-align: center;
-  text-transform: uppercase;
-
-  color: var(--second-color);
+  letter-spacing: 0.04em;
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
@@ -67,14 +58,12 @@
 }
 
 .about__title {
+  display: block;
   margin-bottom: 25px;
 
-  font-family: Titan One;
-  font-weight: 400;
   font-size: 34px;
   text-align: center;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
 
   color: var(--accent-color);
 
