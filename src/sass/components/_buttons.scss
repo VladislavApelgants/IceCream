@@ -38,6 +38,10 @@
   background-color: var(--primary-color);
   stroke: var(--accent-color);
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   &:hover,
   &:focus {
     background-color: var(--hover-light-button-bg);
