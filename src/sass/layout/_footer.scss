@@ -47,15 +47,15 @@
   flex-direction: column;
 }
 .footer__box{
-margin-top: 45px;
-font-family: DM Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 1.86;
-text-align: right;
+  margin-top: 45px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: right;
 
-color: var( --primary-text-color); 
+  color: var( --primary-text-color); 
 }
 .footer__number{
   color:var(--accent-color);
@@ -100,5 +100,4 @@ font-size: 14px;
 line-height: 1.52;
 text-align: center;
 color: var(--second-text-color);
-
 }
