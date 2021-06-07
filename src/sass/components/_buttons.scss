@@ -100,8 +100,8 @@
   @extend %button;
 
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
+  font-size: 14px;
+  line-height: 1.29;
 
   width: 176px;
   height: 44px;
@@ -114,6 +114,10 @@
   &:hover,
   &:focus {
     background-color: var(--hover-light-button-bg);
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.31;
   }
 }
 
