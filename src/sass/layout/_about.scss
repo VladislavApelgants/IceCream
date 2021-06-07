@@ -1,8 +1,45 @@
 .about {
   padding-top: 125px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 
   background-color: var(--primary-bg);
+  background-size: 100% auto;
+
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/about/milk_mobile.png);
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url(../images/about/milk@2x_mobile.png);
+        // background-size: contain;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 33px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 75px;
+
+    background-image: url(../images/about/milk_desktop.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url(../images/about/milk@2x_desktop.png);
+      }
+    }
+  }
 }
 
 .about__label {
@@ -10,6 +47,7 @@
   margin-bottom: 15px;
 
   font-family: Titan One;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -53,23 +91,33 @@
     letter-spacing: 0.06em;
   }
 }
-.about__container {
+
+.about__box {
   @media screen and (min-width: 768px) {
     display: flex;
   }
 }
 
-.about__img {
-  width: 280px;
-  height: 280px;
-
+.about__thumb {
   @media screen and (max-width: 767px) {
     margin-bottom: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+}
+
+.about__img {
+  display: inline-block;
+  width: 280px;
+  height: 279px;
+
   @media screen and (min-width: 768px) {
     width: 340px;
-    height: 340px;
+    height: 339px;
   }
+
   @media screen and (min-width: 1280px) {
     width: 516px;
     height: 516px;
@@ -83,6 +131,7 @@
   @media screen and (min-width: 768px) {
     padding: 60px 0px 0px 15px;
   }
+
   @media screen and (min-width: 1280px) {
     padding: 60px 0px 0px 74px;
   }
