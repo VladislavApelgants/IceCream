@@ -46,13 +46,12 @@
 }
 
 .menu-btn__icon {
+  width: 40px;
+  height: 40px;
 }
 
 .menu-btn__close {
   display: none;
-
-  width: 14px;
-  height: 14px;
   stroke: var(--primary-color);
 
   .is-open & {
@@ -60,14 +59,12 @@
   }
 }
 .menu-btn__icon-burger {
-  width: 20px;
-  height: 12px;
   stroke: var(--accent-color);
 }
 
 .is-open .menu-btn__icon-burger {
-  width: 20px;
-  height: 12px;
+  width: 40px;
+  height: 40px;
   stroke: var(--accent-color);
   display: none;
 }
