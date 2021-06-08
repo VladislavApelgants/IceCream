@@ -1,14 +1,13 @@
-<!--Модальное окно-->
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <button class="modal__btn">
+    <button class="modal__btn data-menu-button">
       <svg data-modal-close class="modal__icon" width="11px" height="11px">
         <use href="./images/icons/svg/sprite2.svg#icon-close"></use>
       </svg>
     </button>
 
     <form class="form">
-      <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
+      <h2 id="buy" class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
       <div class="form-group">
         <label for="name" class="form-group__label">Имя</label>
         <input class="form-group__contact form-input" type="text" name="user-name" id="name" />
