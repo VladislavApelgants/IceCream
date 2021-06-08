@@ -130,30 +130,45 @@
 }
 
 .button-contacts-main {
-  @extend %button;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 10px;
+  width: 161px;
+  height: 44px;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
 
-  width: 161px;
-  height: 44px;
+  border-color: transparent;
+  border-radius: 20px;
+
+  cursor: pointer;
 
   color: var(--primary-color);
   background-color: var(--accent-color);
 
   stroke: var(--primary-color);
 
-  transition: background-color 250ms var(--animation);
+  transition: background-color 250ms var(--animation), box-shadow 250ms var(--animation);
 
   &:hover,
   &:focus {
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+      0px 2px 1px rgb(0 0 0 / 20%);
     background-color: var(--hover-dark-button-bg);
   }
 
   @media screen and (min-width: 768px) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
     width: 191px;
     height: 44px;
+    margin-right: 15px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -163,7 +178,9 @@
 }
 
 .button-contacts-second {
-  @extend %button;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
   font-weight: 700;
   font-size: 16px;
@@ -171,6 +188,11 @@
 
   width: 161px;
   height: 44px;
+
+  border-color: transparent;
+  border-radius: 20px;
+
+  cursor: pointer;
 
   color: var(--accent-color);
   background-color: var(--primary-color);
@@ -185,6 +207,10 @@
   }
 
   @media screen and (min-width: 768px) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
     width: 174px;
     height: 44px;
   }
