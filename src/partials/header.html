@@ -1,65 +1,61 @@
-<!-- Шапка -->
-<header class="header">
-  <div class="header__panel">
-    <a class="logo header__logo" href="./index.html"
-      ><img src="./images/icons/svg/logo.svg" alt="Лого Мороженое"
-    /></a>
+<body>
+  <header class="header">
+    <div class="header__panel">
+      <a href="./index.html" lang="en" class="logo header__logo"
+        ><img src="./images/icons/svg/logo.svg" alt="Лого Мороженое"
+      /></a>
 
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link current" href="">Home</a></li>
-        <li class="nav__item"><a class="nav__link" href="">About us</a></li>
-        <li class="nav__item"><a class="nav__link" href="">How it’s made?</a></li>
-        <li class="nav__item"><a class="nav__link" href="">Our products</a></li>
-        <li class="nav__item"><a class="nav__link" href="">Contact</a></li>
-      </ul>
-    </nav>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link current" href="">Home</a></li>
+          <li class="nav__item"><a class="nav__link" href="">About us</a></li>
+          <li class="nav__item"><a class="nav__link" href="">How it’s made?</a></li>
+          <li class="nav__item"><a class="nav__link" href="">Our products</a></li>
+          <li class="nav__item"><a class="nav__link" href="">Contact</a></li>
+        </ul>
+      </nav>
 
-    <button class="mobile-menu__btn" data-menu-button>
-      <svg class="menu-btn__icon" width="20" height="12">
-        <use class="menu-btn__close" href="./images/icons/svg/sprite.svg#icon-close"></use>
-        <use class="menu-btn__icon-burger" href="./images/icons/svg/sprite.svg#icon-burger"></use>
-      </svg>
-    </button>
+      <button class="mobile-menu__btn" data-menu-button>
+        <svg class="menu-btn__icon" width="40" height="40">
+          <use class="menu-btn__close" href="./images/icons/svg/sprite.svg#icon-close"></use>
+          <use class="menu-btn__icon-burger" href="./images/icons/svg/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
 
+      <button data-modal-open type="button" class="button-header">
+        <span>Buy now</span>
+        <svg height="8" width="10" class="button__pointer">
+          <use href="./images/icons/svg/sprite.svg#icon-arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!--Мобильное меню-->
+  <div class="mobile-menu" data-menu>
     <button type="button" class="button-header">
       <span>Buy now</span>
       <svg height="8" width="10" class="button__pointer">
         <use href="./images/icons/svg/sprite.svg#icon-arrow"></use>
       </svg>
     </button>
+
+    <ul class="mobile-menu__list">
+      <li class="item mobile-menu__item">
+        <a href="#bottom" class="link mobile-menu__link mobile-menu__link--accent">Home</a>
+      </li>
+      <li class="item mobile-menu__item">
+        <a href="#products" class="link mobile-menu__link">About us</a>
+      </li>
+      <li class="item mobile-menu__item">
+        <a href="#about" class="link mobile-menu__link">How it’s made?</a>
+      </li>
+      <li class="item mobile-menu__item">
+        <a href="#gallery" class="link mobile-menu__link">Our products</a>
+      </li>
+      <li class="item mobile-menu__item">
+        <a href="#contacts" class="link mobile-menu__link">Contact</a>
+      </li>
+    </ul>
   </div>
-</header>
-
-<div class="mobile-menu" data-menu>
-  <button type="button" class="button-header">
-    <span>Buy now</span>
-    <svg height="8" width="10" class="button__pointer">
-      <use href="./images/icons/svg/sprite.svg#icon-arrow"></use>
-    </svg>
-  </button>
-
-  <ul class="mobile-menu__list">
-    <li class="item mobile-menu__item">
-      <a
-        href="#ice cream made with passion"
-        class="link mobile-menu__link mobile-menu__link--accent"
-        >Home</a
-      >
-    </li>
-    <li class="item mobile-menu__item">
-      <a href="#products" class="link mobile-menu__link">About us</a>
-    </li>
-    <li class="item mobile-menu__item">
-      <a href="#how it’s made?" class="link mobile-menu__link">How it’s made?</a>
-    </li>
-    <li class="item mobile-menu__item">
-      <a href="#gallery" class="link mobile-menu__link">Our products</a>
-    </li>
-    <li class="item mobile-menu__item">
-      <a href="#contacts" class="link mobile-menu__link">Contact</a>
-    </li>
-  </ul>
-</div>
-
-<script src="./js/menu.js"></script>
+</body>
