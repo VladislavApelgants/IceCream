@@ -1,4 +1,7 @@
+.gallery {
+  background-image: linear-gradient(to top, var(--primary-color) 60%, var(--primary-bg) 60%);
+}
+
 .gallery__container {
   padding: 0;
-  background-image: linear-gradient(to top, var(--primary-color) 60%, var(--primary-bg) 60%);
 }
