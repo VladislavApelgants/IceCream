@@ -38,6 +38,8 @@
   background-color: var(--primary-color);
   stroke: var(--accent-color);
 
+  transition: background-color 250ms var(--animation);
+
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -57,6 +59,8 @@
 
   width: 63px;
   height: 24px;
+
+  transition: background-color 250ms var(--animation);
 
   &:hover,
   &:focus {
@@ -82,6 +86,8 @@
 
   color: var(--accent-color);
   background-color: var(--primary-color);
+
+  transition: background-color 250ms var(--animation);
 
   &:hover,
   &:focus {
@@ -111,6 +117,8 @@
 
   stroke: var(--accent-color);
 
+  transition: background-color 250ms var(--animation);
+
   &:hover,
   &:focus {
     background-color: var(--hover-light-button-bg);
@@ -135,6 +143,8 @@
   background-color: var(--accent-color);
 
   stroke: var(--primary-color);
+
+  transition: background-color 250ms var(--animation);
 
   &:hover,
   &:focus {
@@ -166,6 +176,8 @@
   background-color: var(--primary-color);
 
   stroke: var(--accent-color);
+
+  transition: background-color 250ms var(--animation);
 
   &:hover,
   &:focus {
