@@ -8,11 +8,12 @@
 .footer__title-label{
   padding-right: auto;
   padding-left: 20px;
+  max-width: 235px;
 }
 .footer__title {
   display: block;
   margin-bottom: 20px;
-
+  padding-top: 20px;
   font-family: var(--title-font);
   font-style: normal;
   font-weight: normal;
@@ -48,13 +49,14 @@
 }
 .footer__box{
   margin-top: 45px;
+  padding-bottom: 45px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 1.86;
   text-align: right;
-
+  
   color: var( --primary-text-color); 
 }
 .footer__number{
@@ -97,4 +99,7 @@ font-size: 14px;
 line-height: 1.52;
 text-align: center;
 color: var(--second-text-color);
+max-width: 150px;
+margin-left: auto;
+margin-right: auto;
 }
