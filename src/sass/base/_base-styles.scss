@@ -18,6 +18,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  image-rendering: optimizeQuality;
 }
 
 a {
@@ -71,9 +72,9 @@ body {
 
   margin-bottom: 15px;
 
-  font-family: 'Titan One', cursive;
+  font-family: var(--title-font);
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.16;
 
@@ -89,4 +90,12 @@ body {
 
 .products {
   @extend %section-padding;
+}
+
+section,
+.header,
+.footer {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
