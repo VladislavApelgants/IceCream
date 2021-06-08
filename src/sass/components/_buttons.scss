@@ -47,6 +47,7 @@
   &:hover,
   &:focus {
     background-color: var(--hover-light-button-bg);
+    color: var(--hover-dark-button-bg);
   }
 }
 
