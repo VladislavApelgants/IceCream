@@ -12,19 +12,12 @@
   justify-content: space-between;
 
   @media screen and (min-width: 768px) {
-    // justify-content: space-between;
     padding: 37px 34px 0 34px;
   }
 
   @media screen and (min-width: 1280px) {
     padding: 37px 115px 0 46px;
-    // margin: 0 auto;
-    align-items: center;
   }
-}
-
-.header__logo {
-  // padding-top: 32px;
 }
 
 .nav {
@@ -57,8 +50,9 @@
   line-height: 1.31;
   align-items: center;
   color: var(--primary-color);
-}
 
-.nav__link.current {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

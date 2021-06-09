@@ -44,18 +44,17 @@
   cursor: pointer;
   color: var(--primary-text-color);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--animation);
 }
 
 .modal__icon {
   fill: currentColor;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--animation);
 }
 
 .modal__btn:hover,
 .modal__btn:focus {
-  //   color: var(--accent-color);
-  color: red;
+  color: var(--accent-color);
 }
 
 .form {
@@ -113,7 +112,7 @@ textarea {
   border-radius: 4px;
   outline: none;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--animation);
 }
 
 .form-input {
@@ -137,7 +136,7 @@ textarea {
   height: 18px;
   fill: var(--primary-text-color);
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--animation);
 }
 
 .form__textarea {
@@ -208,7 +207,7 @@ textarea {
 
   stroke: var(--primary-color);
 
-  transition: background-color 250ms var(--animation);
+  transition: background-color var(--animation);
 
   &:hover,
   &:focus {
