@@ -90,7 +90,7 @@
   background-color: var(--primary-color);
   stroke: var(--accent-color);
 
-  transition: background-color 250ms var(--animation);
+  transition: background-color var(--animation);
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -122,11 +122,33 @@
 
   stroke: var(--primary-color);
 
-  transition: background-color 250ms var(--animation);
+  transition: background-color var(--animation);
 
   &:hover,
   &:focus {
     background-color: var(--second-bg);
+  }
+}
+
+.button-menu {
+  @extend %button;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  width: 184px;
+  height: 44px;
+
+  color: var(--accent-color);
+  background-color: var(--primary-color);
+  stroke: var(--accent-color);
+
+  transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-light-button-bg);
+    color: var(--hover-dark-button-bg);
   }
 }
 
@@ -172,7 +194,7 @@
   background-color: var(--primary-color);
 
   z-index: 6;
-  
+
   transition: background-color 250ms var(--animation);
 
   &:hover,
