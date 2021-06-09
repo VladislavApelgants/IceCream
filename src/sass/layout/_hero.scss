@@ -1,4 +1,11 @@
 .hero {
+  max-width: 1600px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+
   @media screen and (max-width: 767px) {
     height: 502px;
   }
@@ -9,6 +16,7 @@
 
   @media screen and (min-width: 1280px) {
     height: 665px;
+    background-color: var(--second-bg);
   }
 }
 
@@ -17,10 +25,14 @@
   background-color: var(--second-bg);
   height: 100%;
   z-index: 2;
+  width: 100%;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     padding: 102px 34px 28px 34px;
   }
+}
+.hero--container {
+  overflow: hidden;
 }
 
 .hero__title {

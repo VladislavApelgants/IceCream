@@ -1,22 +1,41 @@
 .header {
-  background-color: var(--second-bg);
-  max-width: 1600px;
+  position: relative;
+  height: 501px;
+  z-index: 20;
+  overflow: hidden;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    max-width: 768px;
+    height: 399px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1600px;
+    height: 665px;
+  }
 }
 
 .header__panel {
   display: flex;
   align-items: center;
-  max-width: 1280px;
+  width: 100%;
+  max-width: 100%;
   padding: 6px 20px 0 20px;
   margin: 0 auto;
   justify-content: space-between;
 
   @media screen and (min-width: 768px) {
     padding: 37px 34px 0 34px;
+    width: 100%;
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1280px) {
     padding: 37px 115px 0 46px;
+    max-width: 1280px;
   }
 }
 
@@ -29,6 +48,10 @@
   }
 }
 
+.header__logo {
+  position: relative;
+  z-index: 1;
+}
 .nav__list {
   display: flex;
 }
