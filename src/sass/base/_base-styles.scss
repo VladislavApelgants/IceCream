@@ -73,7 +73,6 @@ body {
   margin-bottom: 15px;
 
   font-family: var(--title-font);
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.16;
@@ -85,6 +84,10 @@ body {
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 1.15;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.17;
   }
 }
 
