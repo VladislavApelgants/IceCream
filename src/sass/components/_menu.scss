@@ -1,47 +1,27 @@
-.container__mobile-menu {
-  position: absolute;
-  height: 364px;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  z-index: 10;
-  pointer-events: stroke;
-
-  @media screen and (min-width: 480px) {
-    width: 100%;
-    max-width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 100%;
-    max-width: 768px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    max-width: 1280px;
-  }
-}
 .mobile-menu {
   position: absolute;
   top: 0;
-  left: 0;
-  transform: translateX(235%);
+  left: -9999px;
   display: flex;
   flex-direction: column;
-  width: 250px;
-  height: 100vh;
-  padding: 60px 24px 60px 24px;
 
   background-color: #e17992;
   transition: 0.5s;
   z-index: 99;
-
-  &.is-open {
-    transform: translateX(0);
+  &.is-open.is-close {
+    left: -9999px;
   }
-
-  @media screen and (min-width: 768px) {
-    transform: translateX(333%);
+  &.is-open {
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 60px 24px 60px 24px;
+  }
+  &.is-close {
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 60px 24px 60px 24px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -49,7 +29,25 @@
   }
 }
 
-.mobile-menu__btn {
+.mobile-menu__close,
+.mobile-menu__close.is-close {
+  position: absolute;
+  top: 20px;
+  left: 90%;
+  z-index: 100;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+
+  transition: fill var(--animation);
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.mobile-menu__burger {
   position: absolute;
   display: inline-flex;
   top: 23px;
@@ -99,7 +97,6 @@
   height: 12px;
 
   stroke: var(--accent-color);
-  display: none;
 }
 
 .mobile-menu__btn:hover .menu-btn__icon,
