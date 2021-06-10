@@ -8,6 +8,7 @@
 
   opacity: 1;
   transition: opacity var(--animation), visibility var(--animation);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -17,18 +18,35 @@
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  min-height: 581px;
-  min-width: 528px;
+  position: relative;
+  top: 0;
+  left: 0;
+  min-width: 320px;
+  overflow: scroll;
 
   background-color: var(--primary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @media screen and (min-width: 528px) {
+    width: 528px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  @media screen and (min-height: 597px) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  @media screen and (min-width: 528px) and (min-height: 597px) {
+    width: 528px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .modal__btn {
@@ -60,7 +78,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  min-width: 448px;
+  min-width: 300px;
   padding: 40px;
 }
 
