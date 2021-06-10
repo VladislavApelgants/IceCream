@@ -163,6 +163,8 @@
   @extend %button;
   color: var(--primary-color);
   background-color: var(--accent-color);
+
+  font-family: var(--main-font);
   font-size: 8px;
   line-height: 1.25;
 
@@ -192,6 +194,7 @@
   position: relative;
   @extend %button;
 
+  font-family: var(--main-font);
   font-size: 8px;
   line-height: 1.25;
 
