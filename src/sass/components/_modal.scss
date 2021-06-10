@@ -198,7 +198,7 @@ textarea {
 }
 
 .form__checkbox:focus + .form__checkbox-label::before {
-  box-shadow: inherit;
+  border-color: var(--accent-color);
 }
 
 .form__checkbox-link {
