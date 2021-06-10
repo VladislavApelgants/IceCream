@@ -90,7 +90,7 @@
   background-color: var(--primary-color);
   stroke: var(--accent-color);
 
-  transition: background-color var(--animation);
+  transition: background-color var(--animation), transform var(--animation);
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -98,6 +98,8 @@
 
   &:hover,
   &:focus {
+    transform: scale(1.1);
+
     background-color: var(--hover-light-button-bg);
     color: var(--hover-dark-button-bg);
   }
@@ -122,11 +124,13 @@
 
   stroke: var(--primary-color);
 
-  transition: background-color var(--animation);
+  transition: background-color var(--animation), transform var(--animation);
 
   &:hover,
   &:focus {
-    background-color: var(--second-bg);
+    transform: scale(1.1);
+
+    background-color: var(--hover-dark-button-bg);
   }
 }
 
@@ -143,10 +147,12 @@
   background-color: var(--primary-color);
   stroke: var(--accent-color);
 
-  transition: background-color var(--animation);
+  transition: background-color var(--animation), transform var(--animation);
 
   &:hover,
   &:focus {
+    transform: scale(1.1);
+
     background-color: var(--hover-light-button-bg);
     color: var(--hover-dark-button-bg);
   }
@@ -165,10 +171,12 @@
 
   z-index: 6;
 
-  transition: background-color 250ms var(--animation);
+  transition: background-color var(--animation), transform var(--animation);
 
   &:hover,
   &:focus {
+    transform: scale(1.1);
+
     background-color: var(--hover-dark-button-bg);
   }
 
@@ -195,10 +203,12 @@
 
   z-index: 6;
 
-  transition: background-color 250ms var(--animation);
+  transition: background-color var(--animation), transform var(--animation);
 
   &:hover,
   &:focus {
+    transform: scale(1.1);
+
     background-color: var(--hover-light-button-bg);
   }
 
@@ -225,10 +235,12 @@
 
   stroke: var(--accent-color);
 
-  transition: background-color 250ms var(--animation);
+  transition: background-color var(--animation), transform var(--animation);
 
   &:hover,
   &:focus {
+    transform: scale(1.1);
+
     background-color: var(--hover-light-button-bg);
   }
   @media screen and (min-width: 768px) {
@@ -260,12 +272,11 @@
 
   stroke: var(--primary-color);
 
-  transition: background-color 250ms var(--animation), box-shadow 250ms var(--animation);
+  transition: background-color var(--animation), transform var(--animation);
 
   &:hover,
   &:focus {
-    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
-      0px 2px 1px rgb(0 0 0 / 20%);
+    transform: scale(1.1);
     background-color: var(--hover-dark-button-bg);
   }
 
@@ -307,10 +318,12 @@
 
   stroke: var(--accent-color);
 
-  transition: background-color 250ms var(--animation);
+  transition: background-color var(--animation), transform var(--animation);
 
   &:hover,
   &:focus {
+    transform: scale(1.1);
+
     background-color: var(--hover-light-button-bg);
   }
 
