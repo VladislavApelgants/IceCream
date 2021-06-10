@@ -1,0 +1,218 @@
+<header class="header">
+  <div class="header__panel">
+    <a href="./index.html" lang="en" class="header__logo"
+      ><img src="./images/icons/svg/logo.svg" alt="Лого Мороженое"
+    /></a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#hero">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="#about">About us</a></li>
+        <li class="nav__item"><a class="nav__link" href="#advantages">How it’s made?</a></li>
+        <li class="nav__item"><a class="nav__link" href="#products">Our products</a></li>
+        <li class="nav__item"><a class="nav__link" href="#contacts">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-menu__burger" data-menu-button>
+      <svg class="menu-btn__icon" width="20" height="20">
+        <use class="menu-btn__icon-burger" href="./images/icons/svg/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <button data-modal-open type="button" class="button-header">
+      <span>Buy now</span>
+      <svg height="8" width="10" class="button__pointer">
+        <use href="./images/icons/svg/sprite.svg#icon-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" data-menu>
+  <button class="mobile-menu__close" data-close>
+    <svg class="menu-btn__icon" width="20" height="20">
+      <use class="menu-btn__close" href="./images/icons/svg/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <button type="button" class="button-menu">
+    <span>Buy now</span>
+    <svg height="8" width="10" class="button__pointer">
+      <use href="./images/icons/svg/sprite.svg#icon-arrow"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu__list">
+    <li class="mobile-menu__item">
+      <a href="#hero" class="mobile-menu__link">Home</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#about" class="mobile-menu__link">About us</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#advantages" class="mobile-menu__link">How it’s made?</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#products" class="mobile-menu__link">Our products</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#contacts.html" class="mobile-menu__link">Contact</a>
+    </li>
+  </ul>
+</div>
+
+<section class="hero" id="hero">
+  <div class="hero--container">
+    <div class="hero__container-title">
+      <h1 class="hero__title">
+        ice cream<br />
+        made with<br />
+        <span class="hero__title-highlight">passion</span>
+      </h1>
+
+      <a href="#products" class="button-products">Products</a>
+      <a href="#about" class="button-how">How it’s made?</a>
+    </div>
+
+    <div class="hero__ice-cream-container">
+      <picture>
+        <source
+          srcset="
+            ./images/hero-header/Ellipse_decktop.png    1x,
+            ./images/hero-header/Ellipse@2x_decktop.png 2x
+          "
+          media="(min-width: 1280px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/hero-header/Ellipse_tablet.png    1x,
+            ./images/hero-header/Ellipse@2x_tablet.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/hero-header/Ellipse_mobile.png    1x,
+            ./images/hero-header/Ellipse@2x_mobile.png 2x
+          "
+          media="(max-width: 767px)"
+          type="image/jpeg"
+        />
+        <img src="./images/hero-header/Ellipse_mobile.png" alt="Галерея" />
+      </picture>
+      <picture class="hero__ice-cream">
+        <source
+          srcset="
+            ./images/hero-header/img2_desktop.png    1x,
+            ./images/hero-header/img2@2x_desktop.png 2x
+          "
+          media="(min-width: 1280px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/hero-header/img2_tablet.png    1x,
+            ./images/hero-header/img2@2x_tablet.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/hero-header/img2_mobile.png    1x,
+            ./images/hero-header/img2@2x_mobile.png 2x
+          "
+          media="(max-width: 767px)"
+          type="image/jpeg"
+        />
+        <img src="./images/hero-header/img2_mobile.png" alt="Галерея" />
+      </picture>
+    </div>
+
+    <div class="hero__bio-container">
+      <picture>
+        <source
+          srcset="
+            ./images/hero-header/img1_desktop.png    1x,
+            ./images/hero-header/img1@2x_desktop.png 2x
+          "
+          media="(min-width: 1280px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/hero-header/img1_tablet.png    1x,
+            ./images/hero-header/img1@2x_tablet.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/jpeg"
+        />
+        <img src="./images/hero-header/img1_tablet.png" height="126" alt="Галерея" />
+      </picture>
+      <div class="hero__text-container">
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button type="button" class="button-hero-arrow">
+          <picture>
+            <source
+              srcset="
+                ./images/icons/png/button_arrow.webp    1x,
+                ./images/icons/png/button_arrow@2x.webp 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/icons/png/button_arrow.png    1x,
+                ./images/icons/png/button_arrow@2x.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+
+            <img src="./images/icons/png/button_arrow.png" alt="открыть" />
+          </picture>
+        </button>
+      </div>
+    </div>
+
+    <div class="hero__girl-container">
+      <picture>
+        <source
+          srcset="
+            ./images/hero-header/img3_desktop.png    1x,
+            ./images/hero-header/img3@2x_desktop.png 2x
+          "
+          media="(min-width: 1280px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/hero-header/img3_tablet.png    1x,
+            ./images/hero-header/img3@2x_tablet.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/jpeg"
+        />
+        <img src="./images/hero-header/img3_tablet.png" alt="Галерея" />
+      </picture>
+    </div>
+
+    <ul class="hero__about">
+      <li class="about__item">
+        <span class="about__ellipse"></span>
+        <b class="about__our-performance">16</b>
+
+        <p class="about__cafes">cafes</p>
+      </li>
+      <li class="about__item">
+        <span class="about__ellipse"></span>
+        <b class="about__our-performance">23</b>
+
+        <p class="about__trucks">food trucks</p>
+      </li>
+    </ul>
+  </div>
+</section>
