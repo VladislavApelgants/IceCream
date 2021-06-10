@@ -12,50 +12,54 @@
         <li class="nav__item"><a class="nav__link" href="#contacts">Contact</a></li>
       </ul>
     </nav>
-      <button class="mobile-menu__btn" data-menu-button>
-        <svg class="menu-btn__icon" width="20" height="20">
-          <use class="menu-btn__close" href="./images/icons/svg/sprite.svg#icon-close"></use>
-          <use class="menu-btn__icon-burger" href="./images/icons/svg/sprite.svg#icon-burger"></use>
-        </svg>
-      </button>
-      <button data-modal-open type="button" class="button-header">
-        <span>Buy now</span>
-        <svg height="8" width="10" class="button__pointer">
-          <use href="./images/icons/svg/sprite.svg#icon-arrow"></use>
-        </svg>
-      </button>
-
-          <div class="mobile-menu" data-menu>
-      <button type="button" class="button-menu">
-        <span>Buy now</span>
-        <svg height="8" width="10" class="button__pointer">
-          <use href="./images/icons/svg/sprite.svg#icon-arrow"></use>
-        </svg>
-      </button>
-
-      <ul class="mobile-menu__list">
-        <li class="mobile-menu__item">
-          <a href="#hero" class="mobile-menu__link">Home</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="#about" class="mobile-menu__link">About us</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="#advantages" class="mobile-menu__link">How it’s made?</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="#products" class="mobile-menu__link">Our products</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="#contacts.html" class="mobile-menu__link">Contact</a>
-        </li>
-      </ul>
-    </div>
+    <button class="mobile-menu__burger" data-menu-button>
+      <svg class="menu-btn__icon" width="20" height="20">
+        <use class="menu-btn__icon-burger" href="./images/icons/svg/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <button data-modal-open type="button" class="button-header">
+      <span>Buy now</span>
+      <svg height="8" width="10" class="button__pointer">
+        <use href="./images/icons/svg/sprite.svg#icon-arrow"></use>
+      </svg>
+    </button>
   </div>
-  </div>
+</header>
 
-  <section class="hero" id="hero">
-  <div class="container hero--container">
+<div class="mobile-menu" data-menu>
+  <button class="mobile-menu__close" data-close>
+    <svg class="menu-btn__icon" width="20" height="20">
+      <use class="menu-btn__close" href="./images/icons/svg/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <button type="button" class="button-menu">
+    <span>Buy now</span>
+    <svg height="8" width="10" class="button__pointer">
+      <use href="./images/icons/svg/sprite.svg#icon-arrow"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu__list">
+    <li class="mobile-menu__item">
+      <a href="#hero" class="mobile-menu__link">Home</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#about" class="mobile-menu__link">About us</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#advantages" class="mobile-menu__link">How it’s made?</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#products" class="mobile-menu__link">Our products</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#contacts.html" class="mobile-menu__link">Contact</a>
+    </li>
+  </ul>
+</div>
+
+<section class="hero" id="hero">
+  <div class="hero--container">
     <div class="hero__container-title">
       <h1 class="hero__title">
         ice cream<br />
@@ -210,7 +214,5 @@
         <p class="about__trucks">food trucks</p>
       </li>
     </ul>
-
-    
+  </div>
 </section>
-</header>
