@@ -139,10 +139,52 @@
   }
 }
 
-.customer-reviews__pag {
+.slider-two__card {
+  padding: 0 10px;
+}
+
+.slider-two {
+  position: relative;
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .slick-dots li {
+    list-style: none;
+    margin-right: 10px;
+  }
+
+  .slick-dots li:not(:last-child) {
+    margin-right: 18px;
+  }
+
+  .slick-dots li button {
+    font-size: 0;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+  }
+
+  .slick-dots li.slick-active button {
+    outline: none;
+    border-radius: 0;
+    z-index: 3;
+    background-image: url('../images/icons/svg/home.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+  }
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  padding-top: 10px;
-  cursor: pointer;
 }
