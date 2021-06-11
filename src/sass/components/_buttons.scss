@@ -344,3 +344,40 @@
     height: 44px;
   }
 }
+
+.button-about-modal {
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  border-color: transparent;
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+
+  width: 176px;
+  height: 44px;
+
+  color: var(--accent-color);
+  background-color: var(--primary-color);
+
+  stroke: var(--accent-color);
+
+  transition: background-color var(--animation), transform var(--animation);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+
+    background-color: var(--hover-light-button-bg);
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
+}
