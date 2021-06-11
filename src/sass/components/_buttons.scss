@@ -363,8 +363,8 @@
   width: 176px;
   height: 44px;
 
-  color: var(--accent-color);
-  background-color: var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--accent-color);
 
   stroke: var(--accent-color);
 
@@ -374,7 +374,7 @@
   &:focus {
     transform: scale(1.1);
 
-    background-color: var(--hover-light-button-bg);
+    background-color: var(--hover-dark-button-bg);
   }
   @media screen and (min-width: 768px) {
     font-size: 16px;
