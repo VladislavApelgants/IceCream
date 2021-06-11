@@ -7,9 +7,11 @@
     </button>
 
     <form class="form">
-      <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
+      <h2 class="form__title label">
+        If you want to order ice cream, leave your details, we will call you back
+      </h2>
       <div class="form-group">
-        <label for="name" class="form-group__label">Имя</label>
+        <label for="name" class="form-group__label">Name</label>
         <input class="form-group__contact form-input" type="text" name="user-name" id="name" />
         <svg class="form-group__icon" width="12" height="12">
           <use href="./images/icons/svg/sprite.svg#icon-person"></use>
@@ -17,7 +19,7 @@
       </div>
 
       <div class="form-group">
-        <label for="tel" class="form-group__label">Телефон</label>
+        <label for="tel" class="form-group__label">Phone</label>
         <input class="form-group__contact form-input" type="tel" name="tel" id="tel" />
         <svg class="form-group__icon" width="13" height="13">
           <use href="./images/icons/svg/sprite.svg#icon-phone"></use>
@@ -25,7 +27,7 @@
       </div>
 
       <div class="form-group">
-        <label for="mail" class="form-group__label">Почта</label>
+        <label for="mail" class="form-group__label">E-mail</label>
         <input class="form-group__contact form-input" type="email" name="mail" id="mail" />
         <svg class="form-group__icon" width="15" height="12">
           <use href="./images/icons/svg/sprite.svg#icon-email"></use>
@@ -33,22 +35,16 @@
       </div>
 
       <div class="form-group__comment">
-        <label for="comment" class="form-group__label">Комментарий</label>
+        <label for="comment" class="form-group__label">Comment</label>
         <textarea
           class="form-group__contact form__textarea"
           name="comment"
           id="comment"
-          placeholder="Введите текст"
+          placeholder="Enter text here"
         ></textarea>
       </div>
 
-      <input class="form__checkbox hidden" type="checkbox" name="user-checkbox" id="checkbox" />
-      <label class="form__checkbox-label" for="checkbox">
-        Соглашаюсь с рассылкой и принимаю
-        <a href="" class="form__checkbox-link">Условия договора</a></label
-      >
-
-      <button type="submit" class="button-modal">Отправить</button>
+      <button type="submit" class="button-modal">Send</button>
     </form>
   </div>
 </div>
