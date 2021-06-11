@@ -40,7 +40,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  background-color: var(--primary-color);
+  background-color: var(--primary-bg);
 
   @media screen and (max-width: 479px) {
     position: relative;
@@ -64,7 +64,7 @@
   top: 8px;
   right: 8px;
 
-  background: var(--primary-color);
+  background: var(--primary-bg);
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 30px;
   height: 30px;
@@ -93,12 +93,8 @@
 }
 
 .form__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
   text-align: center;
-  color: var(--title-text-color);
-  margin-bottom: 12px;
+  color: var(--accent-color);
 }
 
 .form-group {
@@ -147,6 +143,8 @@ textarea {
   height: 40px;
   padding-left: 42px;
   margin: 0;
+
+  background-color: var(--primary-bg);
 }
 
 .form-group__contact:focus + .form-group__icon,
@@ -170,6 +168,8 @@ textarea {
 .form__textarea {
   height: 120px;
   padding: 12px 14px;
+
+  background-color: var(--primary-bg);
 }
 
 .form__textarea::placeholder {
